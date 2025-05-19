@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me - Vaishnavi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #101010);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .logo {
+      color: #5ebaf4;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #5ebaf4;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(94, 186, 244, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #5ebaf4;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 1rem;
+      background-color: #2a2a2a;
+      border: none;
+      border-radius: 5px;
+      color: #5ebaf4;
+      font-size: 1rem;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: #5ebaf4;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #5ebaf4;
+      color: #000;
+      font-weight: 600;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .other-contact {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .other-contact p {
+      margin: 8px 0;
+    }
+
+    .other-contact a {
+      color: #5ebaf4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .other-contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Vaishnavi's Portfolio</div>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+      <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/certificate.html">certificates</a></li>
+      <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div class="other-contact">
+      <h3>Reach Me Here</h3>
+      <p>Email: <a href="mailto:vaishnavinaik22@gmail.com">vaishnavinaik22@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishnavinaik" target="_blank">Vaishnavi Naik</a></p>
+      <p>GitHub: <a href="https://github.com/vaishnavinaikl22" target="_blank">vaishnavinaikl22</a></p>
+      <p>Twitter: <a href="https://twitter.com/vaishnavinaikl222" target="_blank">@vaishnavinaikl222</a></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Vaishnavi Naik. All rights reserved.
+  </footer>
+
+</body>
+</html>

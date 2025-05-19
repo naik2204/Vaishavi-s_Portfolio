@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Certificates</title>
+  <style>
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+  
+    .heading {
+      text-align: center;
+      color: #5ebaf4; /* Yellow */
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+  
+    .cert-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+  
+    .cert-box {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #5ebaf4;
+      padding: 1.5rem;
+      flex: 1 1 300px; /* Minimum width per box */
+      max-width: 350px;
+      text-align: center;
+    }
+  
+    .cert-box img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  
+    .cert-box h3 {
+      color: #5ebaf4;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #5ebaf4;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn:hover {
+      background-color: #5ebaf4;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: #1a1a1a;
+      padding: 0 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+    }
+
+    .left {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color:#5ebaf4;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color:#5ebaf4;
+      transition: 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #5ebaf4;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 100px 20px 60px;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .leftSection {
+      max-width: 500px;
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .leftSection .purple {
+      color:#5ebaf4;
+    }
+
+    .cta {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color:#5ebaf4;
+      color: black;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .rightSection {
+      background-color: #5ebaf4;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .rightSection img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      clip-path: ellipse(70% 50% at 50% 50%);
+      border: 5px solid#5ebaf4;
+      transition: all 0.3s ease;
+    }
+
+    .rightSection img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+
+    .aboutSection {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .aboutLeft, .aboutRight {
+      background: #1c1c1c;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .aboutLeft {
+      flex: 1 1 30%;
+    }
+
+    .aboutRight {
+      flex: 1 1 60%;
+    }
+
+    .aboutLeft h2 {
+      color:#5ebaf4;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .info-list p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color:#5ebaf4;
+    }
+
+    .bar-container {
+      background-color: #333;
+      border-radius: 30px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .bar {
+      background-color: #5ebaf4;
+      height: 20px;
+      line-height: 20px;
+      padding-right: 10px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: width 1s ease-in-out;
+    }
+
+    h1.sectionTitle {
+      font-size: 3rem;
+      color: #5ebaf4;
+      margin-bottom: 20px;
+    }
+
+    .aboutRight p {
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    #element {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #5ebaf4;
+    }
+
+    hr {
+      border: 1px solid #5ebaf4;
+      width: 60px;
+      margin: 40px auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .rightSection img {
+        width: 280px;
+        height: 280px;
+      }
+
+      .aboutSection {
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .aboutLeft, .aboutRight {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .leftSection {
+        font-size: 1.8rem;
+      }
+
+      #element {
+        font-size: 1.5rem;
+      }
+
+      .cta {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+   
+  <nav>
+    <div class="left">Vaishnavi's Portfolio</div>
+    <ul class="right">
+      <li><a href="http://127.0.0.1:5500/home.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+      <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/certificate.html">certificates</a></li>
+      <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<section id="certificates">
+  <h2 class="heading">My Certificates</h2>
+  <div class="cert-container">
+    <div class="cert-box">
+      <img src="cert4.jpg" alt="C certificate">
+      <h3>c certificate</h3>
+      <a href="http://127.0.0.1:5500/vv.html" class="btn" id="button" target="_blank">VIEW CERTIFICATE</a>
+    </div>
+    <br><br><br><br><br>
+    <div class="cert-box">
+      <img src="cert3.jpg" alt="Linux certificate">
+      <h3>linux certificate</h3>
+      <a href="http://127.0.0.1:5500/vvvv.html" class="btn" id="button" target="_blank">VIEW CERTIFICATE</a>
+    </div>
+<br>
+   
+    <br>
+
+    <div class="cert-box">
+      <img src="cert1.jpg" alt="Python certificate">
+      <h3>python certificate</h3>
+      <a href="http://127.0.0.1:5500/vvv.html" class="btn" id="button" target="_blank">VIEW CERTIFICATE</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
